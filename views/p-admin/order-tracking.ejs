@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fastkart admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Fastkart admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="pixelstrap">
+    <link rel="icon" href="/p-admin/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/p-admin/images/favicon.png" type="image/x-icon">
+    <title>رهگیری سفارش - فست کارت</title>
+
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/font-awesome.css">
+
+    <!-- Linear Icon css -->
+    <link rel="stylesheet" href="/p-admin/css/linearicon.css">
+
+    <!-- Themify icon css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/themify.css">
+
+    <!--Dropzon css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/dropzone.css">
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/feather-icon.css">
+
+    <!-- remixicon css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/remixicon.css">
+
+    <!-- Plugins css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/chartist.css">
+
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/bootstrap.css">
+
+    <!-- Bootstrap-tag input css-->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/bootstrap-tagsinput.css">
+
+    <!-- App css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/font.css">
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/custom.css">
+</head>
+
+<body>
+    <!-- tap on top start-->
+    <div class="tap-top">
+        <span class="lnr lnr-chevron-up"></span>
+    </div>
+    <!-- tap on tap end-->
+
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+        <!-- Page Header Start-->
+        <div class="page-header">
+            <div class="header-wrapper m-0">
+                <div class="header-logo-wrapper p-0">
+                    <div class="logo-wrapper">
+                        <a href="index.ejs">
+                            <img class="img-fluid main-logo" src="/p-admin/images/logo/1.png" alt="logo">
+                            <img class="img-fluid white-logo" src="/p-admin/images/logo/1-white.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="toggle-sidebar">
+                        <i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i>
+                        <a href="index.ejs">
+                            <img src="/p-admin/images/logo/1.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <form class="form-inline search-full" action="javascript:void(0)" method="get">
+                    <div class="form-group w-100">
+                        <div class="Typeahead Typeahead--twitterUsers">
+                            <div class="u-posRelative">
+                                <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="جستجو کنید ..." name="q" title="" autofocus="">
+                                <i class="close-search" data-feather="x"></i>
+                                <div class="spinner-border Typeahead-spinner" role="status">
+                                   <span class="sr-only">لطفا صبر کنید ...</span>
+                                </div>
+                            </div>
+                            <div class="Typeahead-menu"></div>
+                        </div>
+                    </div>
+                </form>
+                <div class="nav-right col-6 pull-right right-header p-0">
+                    <ul class="nav-menus">
+                        <li>
+                            <span class="header-search">
+                                <i class="ri-search-line"></i>
+                            </span>
+                        </li>
+                        <li class="onhover-dropdown">
+                            <div class="notification-box">
+                                <i class="ri-notification-line"></i>
+                                <span class="badge rounded-pill badge-theme">4</span>
+                            </div>
+                            <ul class="notification-dropdown onhover-show-div">
+                                <li>
+                                    <i class="ri-notification-line"></i>
+                                    <h6 class="f-18 mb-0">پیام ها</h6>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa fa-circle me-2 font-primary"></i>پردازش محصولات<span class="pull-right">10 دقیقه</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa fa-circle me-2 font-success"></i>تکمیل سفارش<span class="pull-right">1 ساعت</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa fa-circle me-2 font-info"></i>بلیط های تولید شده<span class="pull-right">3 ساعت</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa fa-circle me-2 font-danger"></i>تحویل کامل<span class="pull-right">6 ساعت</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a class="btn btn-primary" href="javascript:void(0)">نمایش تمام پیام ها</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <div class="mode">
+                                <i class="ri-moon-line"></i>
+                            </div>
+                        </li>
+                        <li class="profile-nav onhover-dropdown pe-0 me-0">
+                            <div class="media profile-media">
+                                <img class="user-profile rounded-circle" src="/p-admin/images/users/4.jpg" alt="">
+                                <div class="user-name-hide media-body">
+                                    <span>امین احمدی</span>
+                                    <p class="mb-0 font-roboto">مدیر<i class="middle ri-arrow-down-s-line"></i></p>
+                                </div>
+                            </div>
+                            <ul class="profile-dropdown onhover-show-div">
+                                <li>
+                                    <a href="all-users.ejs">
+                                        <i data-feather="users"></i>
+                                        <span>کاربران</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="order-list.ejs">
+                                        <i data-feather="archive"></i>
+                                        <span>سفارشات</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="support-ticket.html">
+                                        <i data-feather="phone"></i>
+                                        <span>تیکت پشتیبانی</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="profile-setting.ejs">
+                                        <i data-feather="settings"></i>
+                                        <span>تنظیمات</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="javascript:void(0)">
+                                        <i data-feather="log-out"></i>
+                                        <span>خروج</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header Ends-->
+
+        <!-- Page Body Start-->
+        <div class="page-body-wrapper">
+            <!-- Page Sidebar Start-->
+            <%- include ('../partials/__sidebar.ejs') %>
+            <!-- Page Sidebar Ends-->
+
+            <!-- Order Tracking Seation starts-->
+            <div class="page-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="title-header option-title">
+                                                <h5>رهگیری سفارش</h5>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 overflow-hidden">
+                                                    <div class="order-left-image">
+                                                        <div class="tracking-product-image">
+                                                            <img src="/p-admin/images/profile/1.jpg" class="img-fluid w-100 blur-up lazyload" alt="">
+                                                        </div>
+
+                                                        <div class="order-image-contain">
+                                                            <h4><%= cart[0].Ph_Users %></h4>
+                                                            <div class="tracker-number">
+                                                            </div>
+                                                            <h5>سفارشات </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <ol class="progtrckr">
+<!--                                                    <li class="progtrckr-done">-->
+<!--                                                        <h5>پردازش سفارش</h5>-->
+<!--                                                        <h6>05:43 صبح</h6>-->
+<!--                                                    </li>-->
+<!--                                                    <li class="progtrckr-done">-->
+<!--                                                        <h5>صدور فاکتور</h5>-->
+<!--                                                        <h6>01:21 عصر</h6>-->
+<!--                                                    </li>-->
+<!--                                                    <li class="progtrckr-done">-->
+<!--                                                        <h5>آماده سازی</h5>-->
+<!--                                                        <h6>در حال انجام</h6>-->
+<!--                                                    </li>-->
+<!--                                                    <li class="progtrckr-todo">-->
+<!--                                                        <h5>ارسال</h5>-->
+<!--                                                        <h6>درانتظار</h6>-->
+<!--                                                    </li>-->
+<!--                                                    <li class="progtrckr-todo">-->
+<!--                                                        <h5>تحویل</h5>-->
+<!--                                                        <h6>در انتظار</h6>-->
+<!--                                                    </li>-->
+                                                </ol>
+
+                                                <div class="col-12 overflow-visible">
+                                                    <div class="tracker-table">
+                                                        <div class="table-responsive">
+                                                            <table class="table">
+                                                                <thead>
+                                                                    <tr class="table-head">
+                                                                        <th scope="col">تاریخ</th>
+                                                                        <th scope="col">محصول</th>
+                                                                        <th scope="col">قیمت اولیه</th>
+                                                                        <th scope="col">قیمت اولیه با تخفیف</th>
+                                                                        <th scope="col">قیمت</th>
+                                                                        <th scope="col">تعداد</th>
+                                                                        <th scope="col">سایز</th>
+                                                                        <th scope="col">رنگ</th>
+                                                                        <th scope="col">تخفیف</th>
+
+                                                                        <th scope="col">استان</th>
+                                                                        <th scope="col">شهر</th>
+                                                                        <th scope="col">آدرس</th>
+                                                                        <th scope="col">کد پستی</th>
+                                                                    </tr>
+                                                                </thead>
+
+                                                                <tbody>
+                                                                <% cart.forEach(item => { %>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <h6><%= String(item.updated_at).slice(0,21)  %></h6>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="/product-detail/<%= item.Id_Product %>"><%= item.Title  %></a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <%
+                                                                                if (item.discount > 0) {
+                                                                                    let a =  item.Last_Price / item.qty
+                                                                                    let c = a * 100 / item.discount
+                                                                                    %>
+                                                                            <h6><%= c.toLocaleString()  %> تومان </h6>
+                                                                            <%
+                                                                                }else {
+                                                                                   let d  = item.Last_Price / item.qty
+                                                                                    %>
+                                                                            <h6><%= d.toLocaleString()  %> تومان </h6>
+                                                                            <%
+                                                                                }
+
+                                                                            %>
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <% let b =  item.Last_Price / item.qty %>
+                                                                            <h6><%= b.toLocaleString()  %> تومان </h6>
+                                                                        </td>
+                                                                        <td>
+                                                                            <h6><%= item.Last_Price.toLocaleString()  %> تومان </h6>
+                                                                        </td>
+                                                                        <td>
+                                                                            <h6><%= item.qty  %> </h6>
+                                                                        </td>
+                                                                        <td>
+                                                                            <h6><%= item.Size_Cart  %> </h6>
+                                                                        </td>
+                                                                        <td>
+                                                                            <h6><%= item.Color_Cart  %> </h6>
+                                                                        </td>
+                                                                        <td>
+                                                                            <h6><%= item.discount  %> </h6>
+                                                                        </td>
+
+
+                                                                        <td>
+                                                                            <h6><%= item.ostan %></h6>
+                                                                        </td>
+                                                                        <td>
+                                                                            <h6><%= item.city %></h6>
+                                                                        </td>
+                                                                        <td>
+                                                                            <h6><%= item.Adrees %></h6>
+                                                                        </td>
+                                                                        <td>
+                                                                            <h6><%= item.Code_Posti %></h6>
+                                                                        </td>
+                                                                    </tr>
+                                                                <% }) %>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer text-end border-0 pb-0 d-flex justify-content-end">
+                                            <button class="btn btn-primary me-3">ارسال</button>
+                                            <button class="btn btn-outline">لغو</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Container-fluid Ends-->
+
+                <!-- footer start-->
+                <div class="container-fluid">
+                    <footer class="footer">
+                        <div class="row">
+                            <div class="col-md-12 footer-copyright text-center">
+                                <p class="mb-0">راست چین شده توسط : امین احمدی</p>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                <!-- footer end-->
+            </div>
+            <!-- Order Tracking Seation End-->
+        </div>
+        <!-- Page Body End-->
+    </div>
+    <!-- page-wrapper End-->
+
+    <!-- Modal Start -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5 class="modal-title" id="staticBackdropLabel">خروج</h5>
+                    <p>آیا برای خارج شدن مطمئن هستید؟</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="button-box">
+                        <button type="button" class="btn btn--no" data-bs-dismiss="modal">خیر</button>
+                        <button type="button" class="btn  btn--yes btn-primary">بله</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal End -->
+
+    <!-- latest js -->
+    <script src="/p-admin/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="/p-admin/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/p-admin/js/notify/bootstrap-notify.min.js"></script>
+
+    <!-- feather icon js -->
+    <script src="/p-admin/js/icons/feather-icon/feather.min.js"></script>
+    <script src="/p-admin/js/icons/feather-icon/feather-icon.js"></script>
+
+    <!-- scrollbar simplebar js -->
+    <script src="/p-admin/js/scrollbar/simplebar.js"></script>
+    <script src="/p-admin/js/scrollbar/custom.js"></script>
+
+    <!-- Sidebar js -->
+    <script src="/p-admin/js/config.js"></script>
+
+    <!-- bootstrap tag-input js -->
+    <script src="/p-admin/js/bootstrap-tagsinput.min.js"></script>
+
+    <!-- customizer js -->
+    <script src="/p-admin/js/customizer.js"></script>
+
+    <!-- customizer js -->
+    <script src="/p-admin/js/sidebar-menu.js"></script>
+
+    <!--Dropzon js -->
+    <script src="/p-admin/js/dropzone/dropzone.js"></script>
+    <script src="/p-admin/js/dropzone/dropzone-script.js"></script>
+
+    <!-- Plugins js -->
+    <script src="/p-admin/js/notify/index.js"></script>
+
+    <!-- sidebar effect -->
+    <script src="/p-admin/js/sidebareffect.js"></script>
+
+    <!-- Theme js -->
+    <script src="/p-admin/js/script.js"></script>
+
+</body>
+
+</html>

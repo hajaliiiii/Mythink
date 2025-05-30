@@ -1,0 +1,99 @@
+  <div
+                aria-labelledby="user-account-drawer-navigation-label"
+                class="main-scroll fixed left-0 top-0 z-40 h-full w-80 -translate-x-full overflow-y-auto bg-muted p-4 pb-20 transition-transform duration-300"
+                id="user-account-drawer-navigation"
+                tabindex="-1"
+        >
+            <div
+                    class="mb-6 flex items-center justify-between gap-x-4 border-b pb-5"
+            >
+                <!-- Close Button -->
+                <button
+                        aria-controls="user-account-drawer-navigation"
+                        class=" "
+                        data-drawer-hide="user-account-drawer-navigation"
+                        type="button"
+                >
+                    <svg class="h-5 w-5">
+                        <use xlink:href="#close"/>
+                    </svg>
+
+                    <span class="sr-only">Close menu</span>
+                </button>
+
+                <h5 class="text-lg">حساب کاربری</h5>
+            </div>
+            <div class="overflow-y-auto">
+                <ul class="space-y-4">
+                    <li>
+                            <a
+                                    class="flex items-center justify-between rounded-lg px-4 py-3 hover:text-primary"
+                                    href="/auth/login"
+                            >
+
+                                      <span class="flex items-center gap-x-4">
+                                        <span class="min-w-fit">
+                                          <img
+                                                  alt=""
+                                                  class="h-10 w-10 rounded-full"
+                                                  src="/images/user.png"
+                                          />
+                                        </span>
+                                        <span class="line-clamp-1">ورود / ثبت نام </span>
+                                      </span>
+
+
+                                <span>
+                                        <svg class="h-6 w-6">
+                                          <use xlink:href="#chevron-left"/>
+                                        </svg>
+                                    </span>
+                            </a>
+
+                    </li>
+
+                    <li>
+                        <a
+                                class="flex items-center justify-between rounded-lg px-4 py-3 hover:text-primary"
+                                href="/cart"
+
+                        >
+                  <span class="flex items-center gap-x-2">
+                    <svg class="h-6 w-6">
+                      <use xlink:href="#order"/>
+                    </svg>
+                    <span> سفارش ها </span>
+                  </span>
+                            <span class="relative flex h-5 w-5">
+                    <span
+                            class="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"
+                    ></span>
+
+                                <% if(!count) { %>
+
+                                <% } else { %>
+                                    <span class="relative inline-flex h-5 w-5 items-center justify-center rounded-full bg-primary-btn text-sm text-white">
+
+                                        <%= count[0]['COUNT(`Id_Cart`)'] %>
+                                    </span>
+                                <% } %>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                                class="flex items-center justify-between rounded-lg px-4 py-3 text-red-500 hover:bg-warning/10 dark:text-red-400 dark:hover:bg-red-400/10"
+                                href="/auth/logout"
+                        >
+                            <div class="flex items-center gap-x-2">
+                                <svg class="h-6 w-6">
+                                    <use xlink:href="#exit"/>
+                                </svg>
+                                <span> خروج </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>

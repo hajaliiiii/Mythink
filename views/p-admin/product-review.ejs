@@ -1,0 +1,844 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fastkart admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Fastkart admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="pixelstrap">
+    <link rel="icon" href="/p-admin/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/p-admin/images/favicon.png" type="image/x-icon">
+    <title>بررسی محصول - فست کارت</title>
+
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/font-awesome.css">
+
+    <!-- Linear Icon css -->
+    <link rel="stylesheet" href="/p-admin/css/linearicon.css">
+
+    <!-- remixicon css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/remixicon.css">
+
+    <!-- Data Table css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/datatables.css">
+
+    <!-- Themify icon css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/themify.css">
+
+    <!-- Feather icon css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/feather-icon.css">
+
+    <!-- Plugins css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/animate.css">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/bootstrap.css">
+
+    <!-- App css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/font.css">
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/custom.css">
+</head>
+
+<body>
+    <!-- tap on top start-->
+    <div class="tap-top">
+        <span class="lnr lnr-chevron-up"></span>
+    </div>
+    <!-- tap on tap end-->
+
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+        <!-- Page Header Start-->
+        <div class="page-header">
+            <div class="header-wrapper m-0">
+                <div class="header-logo-wrapper p-0">
+                    <div class="logo-wrapper">
+                        <a href="index.ejs">
+                            <img class="img-fluid main-logo" src="/p-admin/images/logo/1.png" alt="logo">
+                            <img class="img-fluid white-logo" src="/p-admin/images/logo/1-white.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="toggle-sidebar">
+                        <i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i>
+                        <a href="index.ejs">
+                            <img src="/p-admin/images/logo/1.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <form class="form-inline search-full" action="javascript:void(0)" method="get">
+                    <div class="form-group w-100">
+                        <div class="Typeahead Typeahead--twitterUsers">
+                            <div class="u-posRelative">
+                                <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="جستجو کنید ..." name="q" title="" autofocus="">
+                                <i class="close-search" data-feather="x"></i>
+                                <div class="spinner-border Typeahead-spinner" role="status">
+                                   <span class="sr-only">لطفا صبر کنید ...</span>
+                                </div>
+                            </div>
+                            <div class="Typeahead-menu"></div>
+                        </div>
+                    </div>
+                </form>
+                <div class="nav-right col-6 pull-right right-header p-0">
+                    <ul class="nav-menus">
+                        <li>
+                            <span class="header-search">
+                                <i class="ri-search-line"></i>
+                            </span>
+                        </li>
+                        <li class="onhover-dropdown">
+                            <div class="notification-box">
+                                <i class="ri-notification-line"></i>
+                                <span class="badge rounded-pill badge-theme">4</span>
+                            </div>
+                            <ul class="notification-dropdown onhover-show-div">
+                                <li>
+                                    <i class="ri-notification-line"></i>
+                                    <h6 class="f-18 mb-0">پیام ها</h6>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa fa-circle me-2 font-primary"></i>پردازش محصولات<span class="pull-right">10 دقیقه</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa fa-circle me-2 font-success"></i>تکمیل سفارش<span class="pull-right">1 ساعت</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa fa-circle me-2 font-info"></i>بلیط های تولید شده<span class="pull-right">3 ساعت</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa fa-circle me-2 font-danger"></i>تحویل کامل<span class="pull-right">6 ساعت</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a class="btn btn-primary" href="javascript:void(0)">نمایش تمام پیام ها</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <div class="mode">
+                                <i class="ri-moon-line"></i>
+                            </div>
+                        </li>
+                        <li class="profile-nav onhover-dropdown pe-0 me-0">
+                            <div class="media profile-media">
+                                <img class="user-profile rounded-circle" src="/p-admin/images/users/4.jpg" alt="">
+                                <div class="user-name-hide media-body">
+                                    <span>امین احمدی</span>
+                                    <p class="mb-0 font-roboto">مدیر<i class="middle ri-arrow-down-s-line"></i></p>
+                                </div>
+                            </div>
+                            <ul class="profile-dropdown onhover-show-div">
+                                <li>
+                                    <a href="all-users.ejs">
+                                        <i data-feather="users"></i>
+                                        <span>کاربران</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="order-list.ejs">
+                                        <i data-feather="archive"></i>
+                                        <span>سفارشات</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="support-ticket.html">
+                                        <i data-feather="phone"></i>
+                                        <span>تیکت پشتیبانی</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="profile-setting.ejs">
+                                        <i data-feather="settings"></i>
+                                        <span>تنظیمات</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="javascript:void(0)">
+                                        <i data-feather="log-out"></i>
+                                        <span>خروج</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header Ends-->
+
+        <!-- Page Body Start-->
+        <div class="page-body-wrapper">
+            <!-- Page Sidebar Start-->
+            <div class="sidebar-wrapper">
+                <div id="sidebarEffect"></div>
+                <div>
+                    <div class="logo-wrapper logo-wrapper-center">
+                        <a href="index.ejs" data-bs-original-title="" title="">
+                            <img class="img-fluid for-white" src="/p-admin/images/logo/full-white.png" alt="logo">
+                        </a>
+                        <div class="back-btn">
+                            <i class="fa fa-angle-left"></i>
+                        </div>
+                        <div class="toggle-sidebar">
+                            <i class="ri-apps-line status_toggle middle sidebar-toggle"></i>
+                        </div>
+                    </div>
+                    <div class="logo-icon-wrapper">
+                        <a href="index.ejs">
+                            <img class="img-fluid main-logo main-white" src="/p-admin/images/logo/1-white.png" alt="logo">
+                            <img class="img-fluid main-logo main-dark" src="/p-admin/images/logo/logo-white.png" alt="logo">
+                        </a>
+                    </div>
+                    <nav class="sidebar-main">
+                        <div class="left-arrow" id="left-arrow">
+                            <i data-feather="arrow-left"></i>
+                        </div>
+
+                        <div id="sidebar-menu">
+                            <ul class="sidebar-links" id="simple-bar">
+                                <li class="back-btn"></li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="index.ejs">
+                                        <i class="ri-home-line"></i>
+                                        <span>پیشخوان</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-store-3-line"></i>
+                                        <span>محصولات</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="products.ejs">محصولات</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="add-new-product.ejs">افزودن محصول جدید</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-list-check-2"></i>
+                                        <span>دسته بندی</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="category.ejs">لیست دسته ها</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="add-new-category.ejs">افزودن دسته جدید</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-list-settings-line"></i>
+                                        <span>ویژگی ها</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="attributes.html">ویژگی ها</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="add-new-attributes.html">افزودن جدید</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-user-3-line"></i>
+                                        <span>کاربران</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="all-users.ejs">نمایش کاربران</a>
+                                        </li>
+                                        <li>
+                                            <a href="add-new-user.ejs">افزودن کاربر جدید</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-user-3-line"></i>
+                                        <span>نقش ها</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="role.html">تمام نقش ها</a>
+                                        </li>
+                                        <li>
+                                            <a href="create-role.html">افزودن نقش جدید</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="media.html">
+                                        <i class="ri-price-tag-3-line"></i>
+                                        <span>رسانه</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-archive-line"></i>
+                                        <span>سفارشات</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="order-list.ejs">لیست سفارشات</a>
+                                        </li>
+                                        <li>
+                                            <a href="order-detail.ejs">جزئیات سفارش</a>
+                                        </li>
+                                        <li>
+                                            <a href="order-tracking.ejs">رهگیری سفارش</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-focus-3-line"></i>
+                                        <span>قطب نما</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="translation.html">ترجمه</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="currency-rates.html">نرخ ارز</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-price-tag-3-line"></i>
+                                        <span>کد تخفیف</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="coupon-list.ejs">لیست تخفیف ها</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="create-coupon.ejs">افزودن</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="taxes.html">
+                                        <i class="ri-price-tag-3-line"></i>
+                                        <span>مالیات</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="product-review.html">
+                                        <i class="ri-star-line"></i>
+                                        <span>بررسی محصول</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="support-ticket.html">
+                                        <i class="ri-phone-line"></i>
+                                        <span>تیکت ها</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-settings-line"></i>
+                                        <span>تنظیمات</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="profile-setting.ejs">تنظیمات حساب</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="reports.html">
+                                        <i class="ri-file-chart-line"></i>
+                                        <span>گزارشات</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="list-page.html">
+                                        <i class="ri-list-check"></i>
+                                        <span>لیست برگه ها</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="right-arrow" id="right-arrow">
+                            <i data-feather="arrow-right"></i>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Page Sidebar Ends-->
+
+            <!-- product review section start -->
+            <div class="page-body">
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card card-table">
+                                <!-- Table Start -->
+                                <div class="card-body">
+                                    <div class="title-header option-title">
+                                        <h5>بررسی محصولات</h5>
+                                    </div>
+                                    <div>
+                                        <div class="table-responsive">
+                                            <table class="user-table ticket-table review-table theme-table table" id="table_id">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ردیف</th>
+                                                        <th>نام مشتری</th>
+                                                        <th>نام محصول</th>
+                                                        <th>رتبه بندی</th>
+                                                        <th>نظرات</th>
+                                                        <th>منتشر شده</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>01</td>
+                                                        <td>امین احمدی</td>
+                                                        <td>گوشت و مرغ</td>
+                                                        <td>
+                                                            <ul class="rating">
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>محصول دیگر مورد نیاز نیست</td>
+                                                        <td class="td-check">
+                                                            <i class="ri-checkbox-circle-line"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>02</td>
+                                                        <td>کارولین هریس</td>
+                                                        <td>کت پلاستیکی باریک</td>
+                                                        <td>
+                                                            <ul class="rating">
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>محصول دیگر مورد نیاز نیست</td>
+                                                        <td class="td-check">
+                                                            <i class="ri-checkbox-circle-line"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>03</td>
+                                                        <td>لوسی موریل</td>
+                                                         <td>سوئیشرت مردانه</td>
+                                                        <td>
+                                                            <ul class="rating">
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>محصول دیگر مورد نیاز نیست</td>
+                                                        <td class="td-check">
+                                                            <i class="ri-checkbox-circle-line"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>04</td>
+                                                        <td>جنیفر استریت</td>
+                                                         <td>تیشرت مردانه هودی</td>
+                                                        <td>
+                                                            <ul class="rating">
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>محصول دیگر مورد نیاز نیست</td>
+                                                        <td class="td-cross">
+                                                            <i class="ri-close-circle-line"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>05</td>
+                                                        <td>کوین میلت</td>
+                                                         <td>پوشاک و کت</td>
+                                                        <td>
+                                                            <ul class="rating">
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>محصول دیگر مورد نیاز نیست</td>
+                                                        <td class="td-check">
+                                                            <i class="ri-checkbox-circle-line"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>06</td>
+                                                         <td>امیر محمدی</td>
+                                                         <td>کت پلاستیکی باریک</td>
+                                                        <td>
+                                                            <ul class="rating">
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>محصول دیگر مورد نیاز نیست</td>
+                                                        <td class="td-cross">
+                                                            <i class="ri-close-circle-line"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>07</td>
+                                                        <td>کوین میلت</td>
+                                                         <td>سوئیشرت مردانه</td>
+                                                        <td>
+                                                            <ul class="rating">
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>محصول دیگر مورد نیاز نیست</td>
+                                                        <td class="td-cross">
+                                                            <i class="ri-close-circle-line"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>08</td>
+                                                        <td>دیلون برادشاو</td>
+                                                         <td>تیشرت مردانه هودی</td>
+                                                        <td>
+                                                            <ul class="rating">
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>محصول دیگر مورد نیاز نیست</td>
+                                                        <td class="td-check">
+                                                            <i class="ri-checkbox-circle-line"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>09</td>
+                                                        <td>لورنا بونر</td>
+                                                         <td>پوشاک و کت</td>
+                                                        <td>
+                                                            <ul class="rating">
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>محصول دیگر مورد نیاز نیست</td>
+                                                        <td class="td-cross">
+                                                            <i class="ri-close-circle-line"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>10</td>
+                                                        <td>ریچارد جانسون</td>
+                                                         <td>کت پلاستیکی باریک </td>
+                                                        <td>
+                                                            <ul class="rating">
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>محصول دیگر مورد نیاز نیست</td>
+                                                        <td class="td-check">
+                                                            <i class="ri-checkbox-circle-line"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>11</td>
+                                                        <td>لورین مک داول</td>
+                                                         <td>سوئیشرت مردانه</td>
+                                                        <td>
+                                                            <ul class="rating">
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star theme-color"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-star"></i>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>محصول دیگر مورد نیاز نیست</td>
+                                                        <td class="td-check">
+                                                            <i class="ri-checkbox-circle-line"></i>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Table End -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Container-fluid Ends-->
+
+                <div class="container-fluid">
+                    <!-- footer start-->
+                    <footer class="footer">
+                        <div class="row">
+                            <div class="col-md-12 footer-copyright text-center">
+                                <p class="mb-0">راست چین شده توسط : امین احمدی</p>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <!-- product review section End -->
+        </div>
+        <!-- Page Body end-->
+
+        <!-- Modal start -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h5 class="modal-title" id="staticBackdropLabel">خروج</h5>
+                    <p>آیا برای خارج شدن مطمئن هستید؟</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="button-box">
+                        <button type="button" class="btn btn--no" data-bs-dismiss="modal">خیر</button>
+                        <button type="button" class="btn  btn--yes btn-primary">بله</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal end -->
+    </div>
+    <!-- page-wrapper end-->
+
+    <!-- latest js -->
+    <script src="/p-admin/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="/p-admin/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- feather icon js -->
+    <script src="/p-admin/js/icons/feather-icon/feather.min.js"></script>
+    <script src="/p-admin/js/icons/feather-icon/feather-icon.js"></script>
+
+    <!-- scrollbar simplebar js -->
+    <script src="/p-admin/js/scrollbar/simplebar.js"></script>
+    <script src="/p-admin/js/scrollbar/custom.js"></script>
+
+    <!-- customizer js -->
+    <script src="/p-admin/js/customizer.js"></script>
+
+    <!-- Sidebar js -->
+    <script src="/p-admin/js/config.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="/p-admin/js/sidebar-menu.js"></script>
+    <script src="/p-admin/js/notify/bootstrap-notify.min.js"></script>
+    <script src="/p-admin/js/notify/index.js"></script>
+
+    <!-- Data table js -->
+    <script src="/p-admin/js/jquery.dataTables.js"></script>
+    <script src="/p-admin/js/custom-data-table.js"></script>
+
+    <!-- sidebar effect -->
+    <script src="/p-admin/js/sidebareffect.js"></script>
+
+    <!-- Theme js -->
+    <script src="/p-admin/js/script.js"></script>
+</body>
+
+</html>

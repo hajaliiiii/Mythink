@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <!-- meta data -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fastkart admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Fastkart admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="pixelstrap">
+    <link rel="icon" href="/p-admin/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/p-admin/images/favicon.png" type="image/x-icon">
+    <title>افزودن محصول جدید - فست کارت</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Linear Icon css -->
+    <link rel="stylesheet" href="/p-admin/css/linearicon.css">
+
+    <!-- Fontawesome css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/font-awesome.css">
+
+    <!-- Themify icon css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/themify.css">
+
+    <!--Dropzon css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/dropzone.css">
+
+    <!-- Feather icon css-->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/feather-icon.css">
+
+    <!-- remixicon css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/remixicon.css">
+
+    <!-- Select2 css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/select2.min.css">
+
+    <!-- Plugins css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/chartist.css">
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/date-picker.css">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/bootstrap.css">
+
+    <!-- Bootstrap-tag input css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/vendors/bootstrap-tagsinput.css">
+
+    <!-- App css -->
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/font.css">
+    <link rel="stylesheet" type="text/css" href="/p-admin/css/custom.css">
+</head>
+
+<body>
+<!-- tap on top start -->
+<div class="tap-top">
+    <span class="lnr lnr-chevron-up"></span>
+</div>
+<!-- tap on tap end -->
+
+<!-- page-wrapper start -->
+<div class="page-wrapper compact-wrapper" id="pageWrapper">
+    <!-- Page Header Start-->
+    <div class="page-header">
+        <div class="header-wrapper m-0">
+            <div class="header-logo-wrapper p-0">
+                <div class="logo-wrapper">
+                    <a href="index.ejs">
+                        <img class="img-fluid main-logo" src="/p-admin/images/logo/1.png" alt="logo">
+                        <img class="img-fluid white-logo" src="/p-admin/images/logo/1-white.png" alt="logo">
+                    </a>
+                </div>
+                <div class="toggle-sidebar">
+                    <i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i>
+                    <a href="index.ejs">
+                        <img src="/p-admin/images/logo/1.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <form class="form-inline search-full" action="javascript:void(0)" method="get">
+                <div class="form-group w-100">
+                    <div class="Typeahead Typeahead--twitterUsers">
+                        <div class="u-posRelative">
+                            <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="جستجو کنید ..." name="q" title="" autofocus="">
+                            <i class="close-search" data-feather="x"></i>
+                            <div class="spinner-border Typeahead-spinner" role="status">
+                                <span class="sr-only">لطفا صبر کنید ...</span>
+                            </div>
+                        </div>
+                        <div class="Typeahead-menu"></div>
+                    </div>
+                </div>
+            </form>
+            <div class="nav-right col-6 pull-right right-header p-0">
+                <ul class="nav-menus">
+                    <li>
+                            <span class="header-search">
+                                <i class="ri-search-line"></i>
+                            </span>
+                    </li>
+                    <li class="onhover-dropdown">
+                        <div class="notification-box">
+                            <i class="ri-notification-line"></i>
+                            <span class="badge rounded-pill badge-theme">4</span>
+                        </div>
+                        <ul class="notification-dropdown onhover-show-div">
+                            <li>
+                                <i class="ri-notification-line"></i>
+                                <h6 class="f-18 mb-0">پیام ها</h6>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fa fa-circle me-2 font-primary"></i>پردازش محصولات<span class="pull-right">10 دقیقه</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fa fa-circle me-2 font-success"></i>تکمیل سفارش<span class="pull-right">1 ساعت</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fa fa-circle me-2 font-info"></i>بلیط های تولید شده<span class="pull-right">3 ساعت</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fa fa-circle me-2 font-danger"></i>تحویل کامل<span class="pull-right">6 ساعت</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a class="btn btn-primary" href="javascript:void(0)">نمایش تمام پیام ها</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="mode">
+                            <i class="ri-moon-line"></i>
+                        </div>
+                    </li>
+                    <li class="profile-nav onhover-dropdown pe-0 me-0">
+                        <div class="media profile-media">
+                            <img class="user-profile rounded-circle" src="/p-admin/images/users/4.jpg" alt="">
+                            <div class="user-name-hide media-body">
+                                <span>امین احمدی</span>
+                                <p class="mb-0 font-roboto">مدیر<i class="middle ri-arrow-down-s-line"></i></p>
+                            </div>
+                        </div>
+                        <ul class="profile-dropdown onhover-show-div">
+                            <li>
+                                <a href="all-users.ejs">
+                                    <i data-feather="users"></i>
+                                    <span>کاربران</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="order-list.ejs">
+                                    <i data-feather="archive"></i>
+                                    <span>سفارشات</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="support-ticket.html">
+                                    <i data-feather="phone"></i>
+                                    <span>تیکت پشتیبانی</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="profile-setting.ejs">
+                                    <i data-feather="settings"></i>
+                                    <span>تنظیمات</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="javascript:void(0)">
+                                    <i data-feather="log-out"></i>
+                                    <span>خروج</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Ends-->
+
+    <!-- Page Body start -->
+    <div class="page-body-wrapper">
+        <!-- Page Sidebar Start-->
+        <%- include ('../partials/__sidebar.ejs') %>
+        <!-- Page Sidebar Ends-->
+
+        <div class="page-body">
+
+            <!-- New Product Add Start -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-sm-8 m-auto">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-header-2">
+                                            <h5>ایجاد محصول جدید</h5>
+                                        </div>
+
+                                        <form action="/p-admin/edit-product" method="post"  class="theme-form theme-form-2 mega-form">
+                                            <div class="mb-4 row align-items-center">
+                                                <label class="form-label-title col-sm-3 mb-0">نام محصول</label>
+                                                <div class="col-sm-9">
+                                                    <input class="form-control" type="text" name="Title" value="<%= product.Title %>" placeholder="عنوان محصول">
+                                                </div>
+                                            </div>
+                                            <div class="mb-4 row align-items-center">
+                                                <label class="form-label-title col-sm-3 mb-0">توضیحات</label>
+                                                <div class="col-sm-9">
+                                                    <textarea name="Description" id="" cols="60" rows="10">
+                                                        <%= product.Description %>
+                                                    </textarea>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="mb-4 row align-items-center">
+                                                <label class="col-sm-3 col-form-label form-label-title">دسته بندی</label>
+                                                <div class="col-sm-9">
+                                                    <select class="js-example-basic-single w-100" name="Category_Id">
+                                                        <option disabled="">منو دسته ها</option>
+                                                        <% category.forEach(item => { %>
+                                                            <option value="<%= item.Id_Category %>" ><%= item.Title_Category %></option>
+                                                        <% }) %>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mb-4 row align-items-center">
+                                                <label class="col-sm-3 col-form-label form-label-title">دسته بندی</label>
+                                                <div class="col-sm-9">
+                                                    <select class="js-example-basic-single w-100" name="Subcategory_Id">
+                                                        <option disabled="">زیر مجموعه</option>
+                                                        <% category.forEach(item => { %>
+                                                            <option value="10" ><%= item.Title_Category %></option>
+                                                        <% }) %>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="mb-4 row align-items-center">
+                                                <label class="form-label-title col-sm-3 mb-0">رنگ</label>
+                                                <div class="col-sm-9">
+                                                    <input class="form-control" type="text" name="Color_Product" value="<%= product.Color_Product %>" placeholder="رنگ">
+                                                </div>
+                                            </div>
+                                            <div class="mb-4 row align-items-center">
+                                                <label class="form-label-title col-sm-3 mb-0">سایز</label>
+                                                <div class="col-sm-9">
+                                                    <input class="form-control" type="text" name="Size_Product" value="<%= product.Size_Product %>" placeholder="سایز">
+                                                </div>
+                                            </div>
+                                            <div class="mb-4 row align-items-center">
+                                                <label class="form-label-title col-sm-3 mb-0">قیمت</label>
+                                                <div class="col-sm-9">
+                                                    <input class="form-control" type="text" name="Price_Product" value="<%= product.Price_Product %>" placeholder="قیمت">
+                                                </div>
+                                            </div>
+                                            <div class="mb-4 row align-items-center">
+                                                <label class="form-label-title col-sm-3 mb-0">تعداد</label>
+                                                <div class="col-sm-9">
+                                                    <input class="form-control" type="text" name="Qty_Product" value="<%= product.Qty_Product %>" placeholder="تعداد">
+                                                </div>
+                                            </div>
+                                            <div class="mb-4 row align-items-center">
+                                                <label class="form-label-title col-sm-3 mb-0">تخفیف</label>
+                                                <div class="col-sm-9">
+                                                    <input class="form-control" type="text" name="discount_Product" value="<%= product.discount_Product %>" placeholder="تخفیف">
+                                                </div>
+                                            </div>
+                                            <div class="mb-4 row align-items-center">
+                                                <label class="form-label-title col-sm-3 mb-0">کد محصول</label>
+                                                <div class="col-sm-9">
+                                                    <input class="form-control" type="text" name="Order_Product" value="<%= product.Order_Product %>" placeholder="کد محصول">
+                                                </div>
+                                            </div>          <div class="mb-4 row align-items-center">
+                                                <label class="form-label-title col-sm-3 mb-0">ویژگی ها</label>
+                                                <div class="col-sm-9">
+                                                    <input class="form-control" type="text" name="Attr_Product" value="<%= product.Attr_Product %>" placeholder="ویژگی ها">
+                                                </div>
+                                            </div>
+
+                                            <button>ادیت محصول</button>
+
+                                            <br>
+                                            <!--                                                <div class="mb-4 row align-items-center">-->
+                                            <!--                                                    <label class="col-sm-3 col-form-label form-label-title">تصاویر</label>-->
+                                            <!--                                                    <div class="col-sm-9">-->
+                                            <!--                                                        <input class="form-control form-choose" type="file" id="formFile" multiple="">-->
+                                            <!--                                                    </div>-->
+                                            <!--                                                </div>-->
+
+                                            <!--                                                <div class="row align-items-center">-->
+                                            <!--                                                    <label class="col-sm-3 col-form-label form-label-title">تصویر شاخص</label>-->
+                                            <!--                                                    <div class="col-sm-9">-->
+                                            <!--                                                        <input class="form-control form-choose" type="file" id="formFileMultiple1" multiple="">-->
+                                            <!--                                                    </div>-->
+                                            <!--                                                </div>-->
+                                            <input class="form-control" type="hidden" name="Id_Product" value="<%= id %>" >
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- New Product Add End -->
+
+            <!-- footer Start -->
+            <div class="container-fluid">
+                <footer class="footer">
+                    <div class="row">
+                        <div class="col-md-12 footer-copyright text-center">
+                            <p class="mb-0">راست چین شده توسط : امین احمدی</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- footer En -->
+        </div>
+        <!-- Container-fluid End -->
+    </div>
+    <!-- Page Body End -->
+</div>
+<!-- page-wrapper End -->
+
+<!-- Modal Start -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h5 class="modal-title" id="staticBackdropLabel">خروج</h5>
+                <p>آیا برای خارج شدن مطمئن هستید؟</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div class="button-box">
+                    <button type="button" class="btn btn--no" data-bs-dismiss="modal">خیر</button>
+                    <button type="button" class="btn  btn--yes btn-primary">بله</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal End -->
+
+<!-- latest js -->
+<script src="/p-admin/js/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="/p-admin/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+<!-- feather icon js -->
+<script src="/p-admin/js/icons/feather-icon/feather.min.js"></script>
+<script src="/p-admin/js/icons/feather-icon/feather-icon.js"></script>
+
+<!-- scrollbar simplebar js -->
+<script src="/p-admin/js/scrollbar/simplebar.js"></script>
+<script src="/p-admin/js/scrollbar/custom.js"></script>
+
+<!-- Sidebar js -->
+<script src="/p-admin/js/config.js"></script>
+
+<!-- bootstrap tag-input js -->
+<script src="/p-admin/js/bootstrap-tagsinput.min.js"></script>
+<script src="/p-admin/js/sidebar-menu.js"></script>
+
+<!-- customizer js -->
+<script src="/p-admin/js/customizer.js"></script>
+
+<!--Dropzon js -->
+<script src="/p-admin/js/dropzone/dropzone.js"></script>
+<script src="/p-admin/js/dropzone/dropzone-script.js"></script>
+
+<!-- Plugins js -->
+<script src="/p-admin/js/notify/bootstrap-notify.min.js"></script>
+<script src="/p-admin/js/notify/index.js"></script>
+
+<!-- ck editor js -->
+<script src="/p-admin/js/ckeditor.js"></script>
+<script src="/p-admin/js/ckeditor-custom.js"></script>
+
+<!-- select2 js -->
+<script src="/p-admin/js/select2.min.js"></script>
+<script src="/p-admin/js/select2-custom.js"></script>
+
+<!-- sidebar effect -->
+<script src="/p-admin/js/sidebareffect.js"></script>
+
+<!-- Theme js -->
+<script src="/p-admin/js/script.js"></script>
+
+</body>
+
+</html>
